@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title> Thao's Travel </title>
+  </head>
+  <body>
+  <style>
+  h3 {
+  text-align: right;
+  font-family: monospace;
+  font-size: 16px;
+  color: gray;
+}
+h2 {
+  color: darkseagreen;
+  text-align: center;
+  font-family: monospace;
+  font-size: 18px;
+  text-shadow: -2px 2px gray;
+}
+h4 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 16px;
+  color: darkseagreen;
+  text-shadow: -2px 2px gray;
+}
+p {
+  text-align: left;
+  font-family: monospace;
+  font-size: 12px;
+  color: gray;
+}
+li {
+  text-align: left;
+  font-family: monospace;
+  font-size: 12px;
+  color: gray;
+}
+body {
+  background-color: rgb( 211, 213, 210);
+}
+h5 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 16px;
+  color: darkseagreen;
+  text-shadow: -2px 2px gray;
+}
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: monospace;
+  font-weight: bold;
+  text-decoration: underline;
+  letter-spacing: 3px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: gray;
+  font-weight: bold;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: darkseagreen;
+  text-shadow: -2px 2px gray;
+  font-weight: bold;
+}
+.logo {
+  float: left;
+  width: 200px;
+  border-width: 0px;
+}
+.tips {
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  border: 2px solid gray;
+  background-color: inherit;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: monospace;
+  color: darkseagreen;
+  font-weight: bold;
+  text-shadow: -2px 2px gray;
+}
+
+/* On mouse-over */
+.btn:hover {background: #d3d5d2;
+}
+h6 {
+  font-family: monospace;
+  font-size: 14px;
+  color: darkseagreen;
+  text-shadow: -2px 2px gray;
+  font-weight: bold;
+}
+p {
+text-align: center;
+}
+footer {
+  text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.me {
+  width: 100px;
+  margin: auto;
+  display: block;
+  border-width: 0px;
+}
+.donations {
+  font-family: monospace;
+  color: darkseagreen;
+  font-weight: bold;
+  text-shadow: -2px 2px gray;
+  font-size: 16px;
+}
+.ex {
+  font-family: monospace; 
+}
+table {
+  border: gray;
+  margin-left: auto;
+  margin-right: auto;
+}
+.donatebutton {
+  border: 2px solid gray;
+  background-color: inherit;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: monospace;
+  color: darkseagreen;
+  text-shadow: -2px 2px gray;
+  font-weight: bold;
+  text-align: center;
+}
+.donatebutton1 {
+    text-align: center;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 2px solid gray;
+  background-color: inherit;
+  color: darkseagreen; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  font-size: 14px; /* Increase font size */
+  font-family: monospace;
+  text-shadow: -2px 2px gray;
+  font-weight: bold;
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#myBtn:hover {
+  background-color: rgb( 211, 213, 210); /* Add a dark-grey background on hover */
+  border-color: gray; /* Remove borders */
+  outline-color: gray; /* Remove outline */
+  -moz-box-shadow: 0 1px 3px gray;
+	-webkit-box-shadow: 0 1px 3px gray;
+}
+.videos {
+float: right;
+}
+a {
+  color: darkseagreen;
+  font-weight: bold;
+}
+.credit {
+  font-style: italic;
+}
+img {
+  border-color: gray;
+border-width: 2px;
+border-style: solid; 
+border-radius: 1px;
+}
+  </style>
+  
+  <script>
+    function showAlert() {
+    alert ("Thank you!");
+  }
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 300px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
+  <br>  
+    <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/857/6028285857_54504a35-0ad5-4df3-8c96-8e4446e51705.png?cb=1631743718" class="logo">
+    <br>
+    <br>
+    <br>
+    <div class="topnav">
+      <a href="#songs">Tunes</a>
+      <a href="#money">Donate</a>
+      <a href="#stuff about me">About</a>
+      <a href="#journal">Blog</a>
+      <a class="active" href="#home">Home</a>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h2> Countries I've Visited </h2>
+    <h4> 2 </h4>
+    <h2> States I've Visited </h2>
+    <h4> 9 </h4> 
+    <hr>
+    <br>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to the Top!</button>
+    <a id="journal"></a>
+    <img src="https://expertvagabond.com/wp-content/uploads/cancun-things-to-do-guide.jpg" class="tips">
+    <p class="credit"> Image uploaded by Matthew Karsten - Expert Vagabond </p>
+    <br>
+    <p> Cancun, Mexico is located on the Yucatan Peninsula and is well-known for its: </p>
+    <ul>
+      <li> Beaches </li>
+      <li> Resorts </li>
+      <li> Nightclubs </li>
+      <li> Restaurants </li>
+    </ul>
+    <p> While in Cancun, every day was a fun day.  I swam, jet-skied, and ate lots of delicious food.  I stayed at a beautiful hotel called Hotel Ziva.  It is an all-inclusive resort right next to the beach.  It even has a pool!  I...</p>
+    <button class="btn ReadMore">Read More</button>
+    <br>
+    <hr>
+    <br>
+    <img src="https://static.wixstatic.com/media/277291_2d44a87b17b644aa9ee9ec15674595c2~mv2.jpg/v1/fill/w_2500,h_1665,al_c/277291_2d44a87b17b644aa9ee9ec15674595c2~mv2.jpg" class="tips">
+        <p class="credit"> Image uploaded by Tally Entertainment </p>
+    <br>
+    <p> Travelling 101: </p>
+    <ol>
+      <li>If you are going somewhere where they speak a different language, practice some common phrases.</li>
+      <li>Pack lightly.  Try not to bring large bags full of clothes you won't wear.</li>
+      <li>Take lots of pictures.  It'll last longer.</li>
+      <li>Eat local food.  Get out of your comfort zone while experiencing something new.</li>
+      <li>Explore.  Don't sit in your hotel room all day long.</li>
+      <li>Have...</li>
+    </ol>
+    <button class="btn ReadMore">Read More</button>
+    <br>
+       <hr>
+    <a id="stuff about me"></a>
+    <br> 
+    <img src="https://www.allenisd.org/cms/lib/TX01001197/Centricity/Template/GlobalAssets/images///logos/CurtisLogo.png" class="me">
+ <p class="credit"> Image uploaded by Curtis Middle School - Allen Independent School District </p>
+    <br>
+    <h2> About Me </h2>
+       <p> My name is Thao, and I attend Curtis Middle School.  I am 13 years old and take a Web Communications class.  Some hobbies I have are gaming, drawing, and listening to music. In the future, I plan to travel to all 50 states.   </p>
+    <hr>
+    
+    <a id="money"></a>
+    <h2> Donate </h2>
+    <p> If you want to support me in my travels, you can donate here!</p>
+    <div class="donations">
+    <form>
+	<table>
+		<tr>
+			<td>
+				Donation Amount:
+			</td>
+
+			<td>
+				<input type="number"  placeholder=$5 class="ex" min="1" max="1000">
+			</td>
+		</tr>
+	</table>
+</form> 
+      <br>
+      <div class="donatebutton1">
+      <button class="donatebutton" onclick="showAlert()">Donate</button>
+    </div>
+    </div>
+    <br>
+    <hr>
+    <a id="songs"></a>
+    <h2> Roadtrip Tunes </h2>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MWe40nEspDM" class="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FKDeYEIj6NU" class="videos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="timestamps">
+<p> timestamps(1) |
+0:00 - riptide - vance joy |
+3:19 - rude - magic! |
+7:02 - royals - lorde |
+10:12 - counting stars - one republic |
+14:27 - wake me up - avicii and aloe blacc |
+18:29 - burn - ellie goulding |
+22:19 - safe and sound - capital cities |
+25:28 - story of my life - one direction |
+29:30 - pompeii - bastille |
+33:01 - best song ever - one direction |
+36:11 - rather be - clean bandit |
+40:12 - get lucky - daft punk, pharell wliiams and nile rodgers
+      </p>
+    </div>
+   <div class="timestamps2">
+      <p> timestamps(2) |
+    0:06 - fireflies - owl city |
+3:48 - we are young - fun ft. Janelle Monae |
+7:58 - somebody that i used to know - gotye ft. kimbra |
+12:02 - can’t hold us - macklemore |
+16:45 - pompeii - bastille |
+20:18 - royals - lorde |
+23:38 - rude - MAGIC! |
+27:25 - can’t feel my face - the weekend |
+30:55 - still feel - half alive |
+  35:03 - sucker - jonas brothers </p>
+    </div> 
+  <hr>
+  <footer>
+      <h6>Contact Info: </h6>
+      <p>  
+      <a href="mailto:thao08win@gmail.com">thao08win@gmail.com</a>
+        <br>
+      <a href="tel:7145917952">714-591-7952</a>
+      </p>
+      <br>
+      <br>
+    <p> Copyright &copy; 2021 · Inspired by <a href="https://www.karaandnate.com/">Kara and Nate</a> · Lidington and Co. · Codepen.io · Thao Nguyen </p>
+      
+    </footer>
+  </body>
+</html>
